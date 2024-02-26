@@ -1,0 +1,69 @@
+Name="I am a Good "
+
+URL = http://127.0.0.1/orangehrm-2.5.0.2/login.php
+
+UN= selenium
+
+PWD = selenium
+
+XUN = //input[@type='text']
+
+XPWD = //input[@type='password']
+
+XSUB = //input[@type='Submit']
+
+#### -----------------Add Employee-----------------------
+
+XPIM= //span[@class='drop current']
+
+XADD=//*[@id="pim"]/ul/li[2]/a/span
+
+XFRAME=//iframe[@frameborder='0'] 
+
+XID=//input[@name='txtEmployeeId']
+
+XLAST=//input[@name='txtEmpLastName']
+
+XFIRST=//input[@name='txtEmpFirstName']
+
+XMID=//input[@name='txtEmpMiddleName']
+
+XNICK=//input[@name='txtEmpNickName']
+
+XPHOTO=//input[@name='photofile']
+
+XSAVE=//input[@id='btnEdit']
+
+XBACK=//input[@class='backbutton']
+
+
+#### ---------------- Delete One Employee------------------------
+
+XEmpList=//*[@id="pim"]/ul/li[1]/a/span
+XOneEmp=//input[@value='0050']
+XDel=//input[@value='Delete']
+
+#### ---------------- Delete Multiple Employees & All Employees ------------------------
+
+XList=//input[@name='chkLocID[]']
+XDel =//input[@value='Delete']
+
+####--------------Search Employee ------------------
+
+XDrp= //select[@name='loc_code']
+XSch=//input[@name='loc_name']
+XSchBtn=//input[@value='Search']
+
+####------------Edit one Employee ----------------------
+XEmp=//*[@id="standardView"]/table/tbody/tr[1]/td[3]/a
+XEdit=//input[@id='btnEditPers']
+XSave1=//input[@id='btnEditPers']
+
+####---------------------Filling Blank Info of One Employee From EXcel Using Edit in Personal Data--------------------
+
+XSsn=//input[@name='txtNICNo']
+XSin=//input[@name='txtSINNo']
+XDOB=//input[@name='DOB']
+XDrpMatstat=//select[@name='cmbMarital']
+XMale= //input[@id='gender1']
+XFemale=//input[@id='gender2']
